@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5SJF61B15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M5SJF61B15');
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "uhvknh2uat");
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights & Trends - Vignify Marketing Solutions Blog</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg1.svg" />
+    <link rel="icon" type="image/png" href="favicon96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="favicon.ico1.ico" />
+
+    <style>
+        :root {
+            --insta-gradient: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
+            --insta-text-clip: linear-gradient(to right, #fa7e1e, #d62976, #962fbf);
+        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f8f5f7; overflow-x: hidden; }
+        .text-gradient-insta { background: var(--insta-text-clip); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; }
+        
+        /* Button Styles */
+        .btn-back-services {
+            background: white; color: #d62976; border: 2px solid transparent;
+            background-image: linear-gradient(white, white), var(--insta-gradient);
+            background-origin: border-box; background-clip: content-box, border-box;
+            box-shadow: 2px 1000px 1px #fff inset; transition: 0.3s;
+        }
+        .btn-back-services:hover { box-shadow: none; color: white; background: var(--insta-gradient); }
+
+        /* Blog Card Hover */
+        .blog-card { transition: all 0.3s ease; }
+        .blog-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .blog-card:hover .read-more-link { padding-left: 10px; color: #d62976; }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight"><span class="text-gradient-insta">Vignify</span> Blog</a>
+            <a href="index.html" class="btn-back-services px-6 py-2 rounded-full font-bold flex items-center gap-2 text-sm">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 flex content-center items-center justify-center">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 opacity-90"></div>
+        <div class="container relative mx-auto text-center z-10" data-aos="fade-up">
+            <h1 class="text-white font-bold text-4xl md:text-5xl drop-shadow-lg mb-4">Digital Growth Insights</h1>
+            <p class="text-white text-lg max-w-2xl mx-auto opacity-90">Expert strategies, SEO updates, and marketing news curated by the team at Vignify.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                
+                <div class="w-full lg:w-8/12 px-4">
+                    <div id="blog-grid" class="grid md:grid-cols-2 gap-8">
+                        <div class="text-center w-full col-span-2 py-10 text-gray-400">Loading insights...</div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-4/12 px-4 mt-12 lg:mt-0">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+                        <h3 class="text-xl font-bold mb-4">Search</h3>
+                        <div class="flex">
+                            <input type="text" id="searchInput" placeholder="Search keywords..." class="w-full border-2 border-gray-200 rounded-l-lg p-2 focus:outline-none focus:border-pink-400">
+                            <button onclick="filterPosts()" class="bg-pink-500 text-white px-4 rounded-r-lg hover:bg-pink-600"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-yellow-400 via-pink-300 to-pink-500 text-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="social-icons flex space-x-6">
+                        <a href="https://www.instagram.com/vignify_marketing_solutions/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white shadow-lg transform hover:scale-110 transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575654660585" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transform hover:scale-110 transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/company/vignifymarketingsolutions/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-800 text-white shadow-lg transform hover:scale-110 transition duration-300"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                        <a href="https://www.youtube.com/@VignifyMarketingSolutions" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-red-600 text-white shadow-lg transform hover:scale-110 transition duration-300"><i class="fab fa-youtube text-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <h4 class="font-bold mb-4">Get In Touch</h4>
+                    <p class="mb-2"><i class="fas fa-envelope mr-2"></i> <a href="mailto:vignify.marketingsolutions@gmail.com" class="hover:underline hover:text-white font-medium">vignify.marketingsolutions@gmail.com</a></p>
+                    <p><i class="fas fa-phone mr-2"></i> <a href="tel:+917598901894" class="hover:underline hover:text-white font-medium">+91 75989 01894</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-4 border-t border-black/10 text-sm text-black/70">
+                &copy; 2025 Vignify Marketing Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+      import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBuM5nE3YxVSqrLtA5dGIgut8Ka9iTUKJo",
+        authDomain: "vignify-19f75.firebaseapp.com",
+        projectId: "vignify-19f75",
+        storageBucket: "vignify-19f75.firebasestorage.app",
+        messagingSenderId: "443199728178",
+        appId: "1:443199728178:web:6e31a1d7e13b94fe376a2b",
+        measurementId: "G-2HLXQHCFPH"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      let globalPosts = [];
+
+      async function fetchBlogPosts() {
+          const container = document.getElementById('blog-grid');
+          try {
+              const querySnapshot = await getDocs(collection(db, "blog_posts"));
+              
+              globalPosts = []; 
+
+              querySnapshot.forEach((doc) => {
+                  const data = doc.data();
+
+                  // Date Handling
+                  let dateString = "Recent";
+                  if (data.created_on && data.created_on.toDate) {
+                      dateString = data.created_on.toDate().toLocaleDateString('en-US', {
+                          year: 'numeric', month: 'short', day: 'numeric'
+                      });
+                  }
+
+                  // Content Handling
+                  let descriptionText = "Click to read full article...";
+                  if (data.content && Array.isArray(data.content) && data.content[0]) {
+                      descriptionText = data.content[0].value || "No preview available";
+                  } else if (typeof data.content === "string") {
+                      descriptionText = data.content;
+                  }
+
+                  const postObj = {
+                      id: doc.id,
+                      title: data.name || "No Title",
+                      desc: descriptionText, 
+                      // FIXED: Correctly uses header_image (the URL text field)
+                      image: data.blog_cover || "https://via.placeholder.com/400x300",
+                      category: data.category || "Insight", 
+                      author: "Vignify Team", 
+                      date: dateString
+                  };
+                  
+                  globalPosts.push(postObj);
+              });
+
+              renderPosts(globalPosts);
+
+          } catch (error) {
+              console.error("Error fetching posts:", error);
+              container.innerHTML = `<div class="text-center w-full col-span-2 text-red-500 py-10">Error loading content. Check console for details.</div>`;
+          }
+      }
+
+      function renderPosts(posts) {
+          const container = document.getElementById('blog-grid');
+          container.innerHTML = ''; 
+
+          if (posts.length === 0) {
+              container.innerHTML = `<div class="text-center w-full col-span-2 text-gray-500 py-10">No articles found.</div>`;
+              return;
+          }
+
+          posts.forEach(post => {
+              const shortDesc = post.desc.length > 100 ? post.desc.substring(0, 100) + "..." : post.desc;
+
+              const card = `
+                  <article class="bg-white rounded-xl shadow-lg overflow-hidden blog-card h-full flex flex-col" data-aos="fade-up">
+                      <div class="h-48 overflow-hidden relative">
+                        <img src="${post.image}" loading="lazy" alt="${post.title}" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                          <span class="absolute top-4 left-4 bg-gradient-to-r from-yellow-400 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-md">
+                              ${post.category}
+                          </span>
+                      </div>
+                      <div class="p-6 flex-1 flex flex-col">
+                          <div class="text-sm text-gray-400 mb-2 flex justify-between">
+                              <span><i class="far fa-calendar-alt mr-1"></i> ${post.date}</span>
+                              <span><i class="far fa-user mr-1"></i> ${post.author}</span>
+                          </div>
+                          <h2 class="text-xl font-bold text-gray-800 mb-3 hover:text-pink-600 transition">${post.title}</h2>
+                          <p class="text-gray-600 text-sm mb-4 flex-1">${shortDesc}</p>
+                          
+                          <a href="post.html?id=${post.id}" class="read-more-link text-pink-500 font-semibold inline-flex items-center transition-all">
+                              Read Full Article <i class="fas fa-arrow-right ml-2"></i>
+                          </a>
+                      </div>
+                  </article>
+              `;
+              container.innerHTML += card;
+          });
+      }
+
+      window.filterPosts = function() {
+          const input = document.getElementById('searchInput').value.toLowerCase();
+          const filtered = globalPosts.filter(post => 
+              post.title.toLowerCase().includes(input) || 
+              post.category.toLowerCase().includes(input)
+          );
+          renderPosts(filtered);
+      }
+
+      fetchBlogPosts();
+    </script>
+</body>
+</html>
