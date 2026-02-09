@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KG7WQP8M');</script>
-<!-- End Google Tag Manager -->
-    
-<meta http-equiv="refresh" content="0; url=https://app.firecms.co/YOUR_PROJECT_ID" />
-<script>window.location.href = "https://app.firecms.co/YOUR_PROJECT_ID";</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KG7WQP8M');</script>
     <title>Admin CMS - Vignify Marketing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-     <link rel="icon" type="image/svg+xml" href="favicon.svg1.svg" />
-     <link rel="icon" type="image/png" href="favicon96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg1.svg" />
+    <link rel="icon" type="image/png" href="favicon96.png" sizes="96x96" />
     <link rel="shortcut icon" href="favicon.ico1.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple png.png" />
     <link rel="manifest" href="site.webmanifest1.webmanifest" />
@@ -31,11 +26,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG7WQP8M"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG7WQP8M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="login-overlay" class="fixed inset-0 bg-gray-900 z-50 flex items-center justify-center">
         <div class="bg-white p-8 rounded-xl shadow-2xl w-96 text-center">
             <h2 class="text-2xl font-bold mb-4 text-gray-800">Vignify Admin</h2>
@@ -162,35 +154,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         // UPDATED addPost Function for admin.html
-function addPost(e) {
-    e.preventDefault();
-    
-    // Get values from form
-    const title = document.getElementById('title').value;
-    const category = document.getElementById('category').value;
-    const image = document.getElementById('image').value;
-    const author = document.getElementById('author').value;
-    const desc = document.getElementById('desc').value;
-    
-    // Generate Date
-    const dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
-    const date = new Date().toLocaleDateString('en-US', dateOptions);
+        function addPost(e) {
+            e.preventDefault();
+            
+            // Get values from form
+            const title = document.getElementById('title').value;
+            const category = document.getElementById('category').value;
+            const image = document.getElementById('image').value;
+            const author = document.getElementById('author').value;
+            const desc = document.getElementById('desc').value;
+            
+            // Generate Date
+            const dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+            const date = new Date().toLocaleDateString('en-US', dateOptions);
 
-    // Generate Unique ID using Timestamp (Essential for links to work!)
-    const id = Date.now(); 
+            // Generate Unique ID using Timestamp (Essential for links to work!)
+            const id = Date.now(); 
 
-    const newPost = { id, title, category, image, author, desc, date };
+            const newPost = { id, title, category, image, author, desc, date };
 
-    // Save to LocalStorage
-    let posts = JSON.parse(localStorage.getItem('vignify_posts')) || [];
-    posts.unshift(newPost);
-    localStorage.setItem('vignify_posts', JSON.stringify(posts));
+            // Save to LocalStorage
+            let posts = JSON.parse(localStorage.getItem('vignify_posts')) || [];
+            posts.unshift(newPost);
+            localStorage.setItem('vignify_posts', JSON.stringify(posts));
 
-    // Reset Form & Reload Table
-    document.getElementById('postForm').reset();
-    renderAdminPosts();
-    alert("Post Published Successfully!");
-}
+            // Reset Form & Reload Table
+            document.getElementById('postForm').reset();
+            renderAdminPosts();
+            alert("Post Published Successfully!");
+        }
+
         // 4. Delete Post
         function deletePost(index) {
             if(confirm("Are you sure you want to delete this blog?")) {
@@ -214,5 +207,3 @@ function addPost(e) {
     </script>
 </body>
 </html>
-
-
